@@ -1,5 +1,6 @@
 import Accordian from './components/accordian'
 import ImageSlider from './components/image-slider'
+import LightDarkMode from './components/light-dark-mode'
 import LoadMoreData from './components/load-more-button'
 import QRCodeGenerator from './components/qr-code-generator'
 import RandomColorGenerator from './components/random-color-generator'
@@ -23,7 +24,9 @@ function App() {
       {/* 트리 형태의 메뉴 */}
       {/*<TreeView menus={menus} />*/}
       {/* QR코드 생성기 */}
-      {<QRCodeGenerator />}
+      {/*<QRCodeGenerator />*/}
+      {/* 다크 모드 */}
+      {<LightDarkMode />}
     </div>
   )
 }
