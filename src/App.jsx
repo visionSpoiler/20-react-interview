@@ -1,6 +1,7 @@
 import Accordian from './components/accordian'
 import ImageSlider from './components/image-slider'
 import LoadMoreData from './components/load-more-button'
+import QRCodeGenerator from './components/qr-code-generator'
 import RandomColorGenerator from './components/random-color-generator'
 import StarRating from './components/star-rating'
 import TreeView from './components/tree-view'
@@ -20,7 +21,9 @@ function App() {
       {/* 더 많은 상품 보기 버튼 */}
       {/*<LoadMoreData /> */}
       {/* 트리 형태의 메뉴 */}
-      {<TreeView menus={menus} />}
+      {/*<TreeView menus={menus} />*/}
+      {/* QR코드 생성기 */}
+      {<QRCodeGenerator />}
     </div>
   )
 }
