@@ -6,10 +6,13 @@ import QRCodeGenerator from './components/qr-code-generator'
 import RandomColorGenerator from './components/random-color-generator'
 import ScrollIndicator from './components/scroll-indicator'
 import StarRating from './components/star-rating'
+import Tabs from './components/tabs'
+import { tabs } from './components/tabs/data'
 import TreeView from './components/tree-view'
 import menus from './components/tree-view/data'
 
 function App() {
+
   return (
     <div className='App'>
       {/* 아코디언 컴퍼넌트 */}
@@ -29,7 +32,9 @@ function App() {
       {/* 다크 모드 */}
       {/*<LightDarkMode />*/}
       {/* 스크롤 표시기 */}
-      {<ScrollIndicator url={'https://dummyjson.com/products?limit=100'} />}
+      {/*<ScrollIndicator url={'https://dummyjson.com/products?limit=100'} />*/}
+      {/* 탭 */}
+      {<Tabs tabsContent={tabs}/>}
     </div>
   )
 }
