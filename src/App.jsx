@@ -2,6 +2,7 @@ import Accordian from './components/accordian'
 import ImageSlider from './components/image-slider'
 import LightDarkMode from './components/light-dark-mode'
 import LoadMoreData from './components/load-more-button'
+import ModalTest from './components/modal-popup/ModalTest'
 import QRCodeGenerator from './components/qr-code-generator'
 import RandomColorGenerator from './components/random-color-generator'
 import ScrollIndicator from './components/scroll-indicator'
@@ -34,7 +35,9 @@ function App() {
       {/* 스크롤 표시기 */}
       {/*<ScrollIndicator url={'https://dummyjson.com/products?limit=100'} />*/}
       {/* 탭 */}
-      {<Tabs tabsContent={tabs}/>}
+      {/*<Tabs tabsContent={tabs}/>*/}
+      {/* 모달 */}
+      {<ModalTest />}
     </div>
   )
 }
