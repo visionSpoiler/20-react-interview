@@ -1,4 +1,5 @@
 import Accordian from './components/accordian'
+import GithubProfileFinder from './components/github-profile-finder'
 import ImageSlider from './components/image-slider'
 import LightDarkMode from './components/light-dark-mode'
 import LoadMoreData from './components/load-more-button'
@@ -37,7 +38,9 @@ function App() {
       {/* 탭 */}
       {/*<Tabs tabsContent={tabs}/>*/}
       {/* 모달 */}
-      {<ModalTest />}
+      {/*<ModalTest />*/}
+      {/* 깃허브 프로파일 탐색기0 */}
+      {<GithubProfileFinder />}
     </div>
   )
 }
