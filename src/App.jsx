@@ -11,6 +11,7 @@ import SearchAutocomplete from './components/search-autocomplete'
 import StarRating from './components/star-rating'
 import Tabs from './components/tabs'
 import { tabs } from './components/tabs/data'
+import TicTacToe from './components/tic-tac-toe'
 import TreeView from './components/tree-view'
 import menus from './components/tree-view/data'
 
@@ -43,7 +44,9 @@ function App() {
       {/* 깃허브 프로파일 탐색기0 */}
       {/*<GithubProfileFinder />*/}
       {/* 자동완성 */}
-      {<SearchAutocomplete />}
+      {/*<SearchAutocomplete />*/}
+      {/* 틱택토 게임 */}
+      {<TicTacToe />}
     </div>
   )
 }
