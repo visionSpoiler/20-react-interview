@@ -7,6 +7,7 @@ import ModalTest from './components/modal-popup/ModalTest'
 import QRCodeGenerator from './components/qr-code-generator'
 import RandomColorGenerator from './components/random-color-generator'
 import ScrollIndicator from './components/scroll-indicator'
+import SearchAutocomplete from './components/search-autocomplete'
 import StarRating from './components/star-rating'
 import Tabs from './components/tabs'
 import { tabs } from './components/tabs/data'
@@ -40,7 +41,9 @@ function App() {
       {/* 모달 */}
       {/*<ModalTest />*/}
       {/* 깃허브 프로파일 탐색기0 */}
-      {<GithubProfileFinder />}
+      {/*<GithubProfileFinder />*/}
+      {/* 자동완성 */}
+      {<SearchAutocomplete />}
     </div>
   )
 }
