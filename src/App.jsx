@@ -20,6 +20,7 @@ import TestUseFetch from "./components/use-fetch/test";
 import TestUseOutSideClick from "./components/use-outside-click/test";
 import TestUseWindowResize from "./components/use-window-resize/test";
 import ScrollToTopAndBottom from "./components/scroll-to-top-and-bottom";
+import ScrollToSection from "./components/scroll-to-particular-section/scroll-to-section";
 
 function App() {
   return (
@@ -63,7 +64,9 @@ function App() {
       {/* 커스텀 훅 useWindowResize */}
       {/*<TestUseWindowResize />*/}
       {/* 커스텀 훅 useScrollToTopAndBottom */}
-      {<ScrollToTopAndBottom />}
+      {/*<ScrollToTopAndBottom />*/}
+      {/* 특정 위치로 이동 */}
+      <ScrollToSection />
     </div>
   );
 }
