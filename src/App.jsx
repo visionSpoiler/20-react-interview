@@ -18,6 +18,7 @@ import menus from "./components/tree-view/data";
 import FeatureFlagGlobalState from "./components/feature-flag/context";
 import TestUseFetch from "./components/use-fetch/test";
 import TestUseOutSideClick from "./components/use-outside-click/test";
+import TestUseWindowResize from "./components/use-window-resize/test";
 
 function App() {
   return (
@@ -57,7 +58,9 @@ function App() {
       {/* 커스텀 훅 useFetch */}
       {/*<TestUseFetch />*/}
       {/* 커스텀 훅 useOutsideClick */}
-      {<TestUseOutSideClick />}
+      {/*<TestUseOutSideClick />*/}
+      {/* 커스텀 훅 useWindowResize */}
+      {<TestUseWindowResize />}
     </div>
   );
 }
