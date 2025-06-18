@@ -26,12 +26,6 @@
 | Scroll to Top/Bottom                 | DOM 제어, UX 개선                 |
 | Scroll to Section                    | `scrollIntoView`, 내비게이션 구현 |
 
-## ✨ 활용 방법
-
-- 이 목록의 항목을 직접 구현하며 실력을 쌓고, GitHub 포트폴리오에 기록해두세요.
-- 각 항목은 1~2시간 이내 구현이 가능하며, 구조적 설계와 코드 품질을 신경 쓰면 면접 시 큰 강점이 됩니다.
-- 필요한 경우 React, TypeScript, Styled Components 또는 Tailwind CSS 등을 적용해도 좋습니다.
-
 ## 🛠 추천 태그
 
 `#React` `#JavaScript` `#Frontend` `#CodingTest` `#UIUX` `#Portfolio` `#면접과제`
