@@ -1,4 +1,5 @@
 import Accordian from './components/accordian'
+import FeatureFlags from './components/feature-flag'
 import GithubProfileFinder from './components/github-profile-finder'
 import ImageSlider from './components/image-slider'
 import LightDarkMode from './components/light-dark-mode'
@@ -14,6 +15,7 @@ import { tabs } from './components/tabs/data'
 import TicTacToe from './components/tic-tac-toe'
 import TreeView from './components/tree-view'
 import menus from './components/tree-view/data'
+import FeatureFlagGlobalState from './components/feature-flag/context'
 
 function App() {
 
@@ -46,7 +48,11 @@ function App() {
       {/* 자동완성 */}
       {/*<SearchAutocomplete />*/}
       {/* 틱택토 게임 */}
-      {<TicTacToe />}
+      {/*<TicTacToe />*/}
+      {/* 배포와 노출 분리 */}
+      {<FeatureFlagGlobalState>
+        <FeatureFlags />
+        </FeatureFlagGlobalState>}
     </div>
   )
 }
