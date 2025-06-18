@@ -1,26 +1,27 @@
-import Accordian from './components/accordian'
-import FeatureFlags from './components/feature-flag'
-import GithubProfileFinder from './components/github-profile-finder'
-import ImageSlider from './components/image-slider'
-import LightDarkMode from './components/light-dark-mode'
-import LoadMoreData from './components/load-more-button'
-import ModalTest from './components/modal-popup/ModalTest'
-import QRCodeGenerator from './components/qr-code-generator'
-import RandomColorGenerator from './components/random-color-generator'
-import ScrollIndicator from './components/scroll-indicator'
-import SearchAutocomplete from './components/search-autocomplete'
-import StarRating from './components/star-rating'
-import Tabs from './components/tabs'
-import { tabs } from './components/tabs/data'
-import TicTacToe from './components/tic-tac-toe'
-import TreeView from './components/tree-view'
-import menus from './components/tree-view/data'
-import FeatureFlagGlobalState from './components/feature-flag/context'
+import Accordian from "./components/accordian";
+import FeatureFlags from "./components/feature-flag";
+import GithubProfileFinder from "./components/github-profile-finder";
+import ImageSlider from "./components/image-slider";
+import LightDarkMode from "./components/light-dark-mode";
+import LoadMoreData from "./components/load-more-button";
+import ModalTest from "./components/modal-popup/ModalTest";
+import QRCodeGenerator from "./components/qr-code-generator";
+import RandomColorGenerator from "./components/random-color-generator";
+import ScrollIndicator from "./components/scroll-indicator";
+import SearchAutocomplete from "./components/search-autocomplete";
+import StarRating from "./components/star-rating";
+import Tabs from "./components/tabs";
+import { tabs } from "./components/tabs/data";
+import TicTacToe from "./components/tic-tac-toe";
+import TreeView from "./components/tree-view";
+import menus from "./components/tree-view/data";
+import FeatureFlagGlobalState from "./components/feature-flag/context";
+import TestUseFetch from "./components/use-fetch/test";
+import TestUseOutSideClick from "./components/use-outside-click/test";
 
 function App() {
-
   return (
-    <div className='App'>
+    <div className="App">
       {/* 아코디언 컴퍼넌트 */}
       {/*<Accordian />*}
       {/* 랜덤 컬러 생성기 */}
@@ -50,11 +51,15 @@ function App() {
       {/* 틱택토 게임 */}
       {/*<TicTacToe />*/}
       {/* 배포와 노출 분리 */}
-      {<FeatureFlagGlobalState>
+      {/*<FeatureFlagGlobalState>
         <FeatureFlags />
-        </FeatureFlagGlobalState>}
+        </FeatureFlagGlobalState>*/}
+      {/* 커스텀 훅 useFetch */}
+      {/*<TestUseFetch />*/}
+      {/* 커스텀 훅 useOutsideClick */}
+      {<TestUseOutSideClick />}
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
